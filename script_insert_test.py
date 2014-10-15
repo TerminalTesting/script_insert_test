@@ -92,6 +92,7 @@ class VSChangesTest(unittest.TestCase):
         element(By.ID, 'username').send_keys(os.getenv('AUTH'))
         element(By.ID, 'password').send_keys(os.getenv('AUTHPASS'))
         element(By.CLASS_NAME, 'btn-primary').click()
+        time.sleep(7)
 
         #add new script insert
         driver.get(self.base_url + self.INSERT_LIST_DESC)
